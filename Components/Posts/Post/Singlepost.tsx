@@ -9,10 +9,9 @@ export type PostDetailViewProps = {
 };
 
 function Singlepost({data} : PostDetailViewProps) {
-    const router = useRouter();
   return (
     <div className={styles.container}>
-      <button className={styles.back} href="/">
+      <Link className={styles.back} href="/">
         Back
       </button>
       <h1 className={styles.title}>{data.Title}</h1>
