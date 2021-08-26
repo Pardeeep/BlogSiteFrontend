@@ -26,7 +26,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   export const getStaticProps: GetStaticProps = async ({ params }) => {
     console.log("@@@@",params)
-    const { data } = await axios.get(`https://strapiblogsite.herokuapp.com/posts/${params.id}`);
+    const { data } = await axios.get(`https://strapiblogsite.herokuapp.com/posts/${params?.id}`);
 
     return {
       props: {
