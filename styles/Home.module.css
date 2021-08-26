@@ -88,6 +88,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
+  cursor: pointer;
 }
 
 .card:hover,
@@ -118,4 +119,23 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.back{
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details{
+  width: 25rem;
+  background: #e5e5e5;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
