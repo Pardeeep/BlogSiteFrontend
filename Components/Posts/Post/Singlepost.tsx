@@ -11,9 +11,9 @@ export type PostDetailViewProps = {
 function Singlepost({data} : PostDetailViewProps) {
   return (
     <div className={styles.container}>
-      <Link className={styles.back} href="/">
-        Back
-      </button>
+      <Link href="/">
+          <button className={styles.back} > Back </button>
+      </Link>
       <h1 className={styles.title}>{data.Title}</h1>
       <p>{moment(data.published_at).format("Do MMM YYYY")}</p>
       <p className={styles.details}>{data.Description}</p>
